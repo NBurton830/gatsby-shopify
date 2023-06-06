@@ -35,5 +35,18 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyxShopify`,
+        short_name: `GxS`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#000`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        legacy: false, // this will not add apple-touch-icon links to <head>
+      },
+    },
   ].filter(Boolean),
 }
